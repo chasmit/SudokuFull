@@ -5,8 +5,8 @@ const PUZZLE_RANGE = range(0, 9, 1);
 
 function possibleValues(grid, i, j) {
     var possible = PUZZLE_RANGE;
-
-    var rowVals = [], colVals = [], baxVals = [];
+    var rowVals = [], colVals = [], boxVals = [];
+    
     const boxX = Math.floor(i/3), boxY = Math.floor(j/3);
     const xRange = range(boxX, boxX+3, 1), yRange = range(boxY, boxY+3, 1);
 
